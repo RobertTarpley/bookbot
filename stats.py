@@ -20,9 +20,9 @@ def sorted_list(character_dict):
     sorted_list = sorted(mylist, reverse=True, key=lambda x: x["count"])
     return sorted_list
 
-def print_book_report(num_words, sorted_chars):
+def print_book_report(book_path, num_words, sorted_chars):
     print("============ BOOKBOT ============")
-    print("Analyzing book found at books/frankenstein.txt...")
+    print(f"Analyzing book found at {book_path}...")
     print("----------- Word Count ----------")
     print(f"Found {num_words} total words")
     print("--------- Character Count -------")
